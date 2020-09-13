@@ -7,15 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		96533E21250699EE0015E74E /* HistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96533E20250699EE0015E74E /* HistoryVC.swift */; };
+		9670A03A2507FA7400DA550D /* HistoryTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9670A0392507FA7400DA550D /* HistoryTVCell.swift */; };
+		9671940225054D8E001DF161 /* Xcalculator.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9671940025054D8E001DF161 /* Xcalculator.xcdatamodeld */; };
 		96DA52EC24F41C270012DA75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DA52EB24F41C270012DA75 /* AppDelegate.swift */; };
 		96DA52EE24F41C270012DA75 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DA52ED24F41C270012DA75 /* SceneDelegate.swift */; };
 		96DA52F024F41C270012DA75 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DA52EF24F41C270012DA75 /* ViewController.swift */; };
 		96DA52F324F41C270012DA75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96DA52F124F41C270012DA75 /* Main.storyboard */; };
 		96DA52F524F41C2A0012DA75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96DA52F424F41C2A0012DA75 /* Assets.xcassets */; };
 		96DA52F824F41C2A0012DA75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96DA52F624F41C2A0012DA75 /* LaunchScreen.storyboard */; };
+		96DC437A24F92C6700D75453 /* CppCode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 96DC437824F92C6700D75453 /* CppCode.cpp */; };
+		96DC437C24F92F2500D75453 /* CppWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 96DC437B24F92F2500D75453 /* CppWrapper.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		96533E20250699EE0015E74E /* HistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryVC.swift; sourceTree = "<group>"; };
+		9670A0392507FA7400DA550D /* HistoryTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTVCell.swift; sourceTree = "<group>"; };
+		9671940125054D8E001DF161 /* Xcalculator.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Xcalculator.xcdatamodel; sourceTree = "<group>"; };
 		96DA52E824F41C270012DA75 /* Xcalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Xcalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96DA52EB24F41C270012DA75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96DA52ED24F41C270012DA75 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +32,11 @@
 		96DA52F424F41C2A0012DA75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		96DA52F724F41C2A0012DA75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		96DA52F924F41C2A0012DA75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96DC437724F92C6600D75453 /* Xcalculator-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Xcalculator-Bridging-Header.h"; sourceTree = "<group>"; };
+		96DC437824F92C6700D75453 /* CppCode.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CppCode.cpp; sourceTree = "<group>"; };
+		96DC437924F92C6700D75453 /* CppCode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CppCode.hpp; sourceTree = "<group>"; };
+		96DC437B24F92F2500D75453 /* CppWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = CppWrapper.mm; sourceTree = "<group>"; };
+		96DC437D24F92F5300D75453 /* CppWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CppWrapper.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +50,82 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		962554F2250BD74200AE183F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				962554F3250BD76D00AE183F /* App */,
+				962554F4250BD7BE00AE183F /* Model */,
+				962554F5250BD84700AE183F /* View */,
+				962554F6250BD89100AE183F /* Controller */,
+				962554F8250BDA9F00AE183F /* Utilities */,
+				962554F7250BD93C00AE183F /* Resources */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		962554F3250BD76D00AE183F /* App */ = {
+			isa = PBXGroup;
+			children = (
+				96DA52EB24F41C270012DA75 /* AppDelegate.swift */,
+				96DA52ED24F41C270012DA75 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		962554F4250BD7BE00AE183F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9671940025054D8E001DF161 /* Xcalculator.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		962554F5250BD84700AE183F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9670A0392507FA7400DA550D /* HistoryTVCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		962554F6250BD89100AE183F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				96DA52EF24F41C270012DA75 /* ViewController.swift */,
+				96533E20250699EE0015E74E /* HistoryVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		962554F7250BD93C00AE183F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				96DA52F624F41C2A0012DA75 /* LaunchScreen.storyboard */,
+				96DA52F124F41C270012DA75 /* Main.storyboard */,
+				96DA52F424F41C2A0012DA75 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		962554F8250BDA9F00AE183F /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				962554F9250BDABD00AE183F /* CPP */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		962554F9250BDABD00AE183F /* CPP */ = {
+			isa = PBXGroup;
+			children = (
+				96DC437824F92C6700D75453 /* CppCode.cpp */,
+				96DC437B24F92F2500D75453 /* CppWrapper.mm */,
+				96DC437D24F92F5300D75453 /* CppWrapper.h */,
+				96DC437924F92C6700D75453 /* CppCode.hpp */,
+			);
+			path = CPP;
+			sourceTree = "<group>";
+		};
 		96DA52DF24F41C270012DA75 = {
 			isa = PBXGroup;
 			children = (
@@ -56,12 +145,8 @@
 		96DA52EA24F41C270012DA75 /* Xcalculator */ = {
 			isa = PBXGroup;
 			children = (
-				96DA52EB24F41C270012DA75 /* AppDelegate.swift */,
-				96DA52ED24F41C270012DA75 /* SceneDelegate.swift */,
-				96DA52EF24F41C270012DA75 /* ViewController.swift */,
-				96DA52F124F41C270012DA75 /* Main.storyboard */,
-				96DA52F424F41C2A0012DA75 /* Assets.xcassets */,
-				96DA52F624F41C2A0012DA75 /* LaunchScreen.storyboard */,
+				962554F2250BD74200AE183F /* Classes */,
+				96DC437724F92C6600D75453 /* Xcalculator-Bridging-Header.h */,
 				96DA52F924F41C2A0012DA75 /* Info.plist */,
 			);
 			path = Xcalculator;
@@ -99,6 +184,7 @@
 				TargetAttributes = {
 					96DA52E724F41C270012DA75 = {
 						CreatedOnToolsVersion = 11.2.1;
+						LastSwiftMigration = 1120;
 					};
 				};
 			};
@@ -138,8 +224,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96533E21250699EE0015E74E /* HistoryVC.swift in Sources */,
+				9671940225054D8E001DF161 /* Xcalculator.xcdatamodeld in Sources */,
+				9670A03A2507FA7400DA550D /* HistoryTVCell.swift in Sources */,
 				96DA52F024F41C270012DA75 /* ViewController.swift in Sources */,
 				96DA52EC24F41C270012DA75 /* AppDelegate.swift in Sources */,
+				96DC437C24F92F2500D75453 /* CppWrapper.mm in Sources */,
+				96DC437A24F92C6700D75453 /* CppCode.cpp in Sources */,
 				96DA52EE24F41C270012DA75 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,6 +375,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Xcalculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -292,6 +384,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mindfire.Xcalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Xcalculator/Xcalculator-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -301,6 +395,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Xcalculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -309,6 +404,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mindfire.Xcalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Xcalculator/Xcalculator-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -336,6 +432,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9671940025054D8E001DF161 /* Xcalculator.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9671940125054D8E001DF161 /* Xcalculator.xcdatamodel */,
+			);
+			currentVersion = 9671940125054D8E001DF161 /* Xcalculator.xcdatamodel */;
+			path = Xcalculator.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 96DA52E024F41C270012DA75 /* Project object */;
 }

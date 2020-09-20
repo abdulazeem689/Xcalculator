@@ -14,11 +14,13 @@ class ViewController: UIViewController {
     @IBOutlet var expressionTxtView: UITextView!;
     @IBOutlet var resLabel: UILabel!;
     @IBOutlet var menuView: UIView!
-
+    @IBOutlet var moreOperatorsView: UIView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad();
         // Do any additional setup after loading the view.
+        self.moreOperatorsView.isHidden = true;
         self.menuView.isHidden = true;
         self.expressionTxtView.textContainer.maximumNumberOfLines = 1;
     }
@@ -56,7 +58,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func menuButton(_ sender: UIButton) {
-        self.menuView.isHidden = self.menuView.isHidden ? false : true;
+        self.menuView.isHidden = self.menuView.isHidden == false;
     }
     
     @IBAction func themeToggle(_ sender: UIButton) {
@@ -70,6 +72,10 @@ class ViewController: UIViewController {
             sceneDelegate?.window?.overrideUserInterfaceStyle = .light;
             sender.setTitle("Dark-theme", for: .normal);
         }
+    }
+    
+    @IBAction func openOperatorView(_ sender: UIButton) {
+        self.moreOperatorsView.isHidden = self.moreOperatorsView.isHidden == false;
     }
     
     func saveData(expression:  String, result: String){
